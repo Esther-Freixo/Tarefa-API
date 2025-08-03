@@ -1,0 +1,415 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #111;
+  }
+  
+  /* ========== HEADER ========== */
+  header {
+    background-color: #3c5ec1;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header img {
+    height: 99px;
+    width: 110px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    color: #000000;
+    ;
+}
+  
+.adminMode {
+    display: flex;
+    align-items: center;
+    width: 315;
+    height: 60;
+    angle: 0 deg;
+    opacity: 1;
+    top: 40px;
+    left: 1064px;
+    gap: 21px;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    background-color: #1F9B5F;  
+}
+
+.adminMode h2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+.adminMode img {
+  height: 40px;
+  width: 40px;
+}
+  
+  /* ========== BOTÃO ADICIONAR ========== */
+  .addBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1310px;
+    height: 100px;
+    margin: 2rem auto;
+    padding: 0.75rem 2rem;
+    background-color: #1F9B5F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+  }
+  
+  /* ========== CARDS ========== */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  
+  .card {
+    background-color: #243B98;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img:first-of-type {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Avaliação e ícones */
+  .card h2.rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .starIcon {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card .deleteBtn,
+  .card .editarBtn {
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .card .deleteBtn {
+    right: 70px;
+  }
+  
+  .card .editarBtn {
+    right: 10px;
+  }
+  
+  .card .deleteBtn img {
+    width: 44px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .card .editarBtn img {
+    width: 44px;
+    background-color: #3c5ec1;
+    border-radius: 100%;
+  }
+  
+  .card h2.name {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color: #8CBF26;
+    margin: 16px 16px 0;
+    width: auto;
+  }
+  
+  .card h3.category {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    margin: 10px 16px 0;
+    color: #FFFFFF;
+  }
+  
+  .description {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    margin: 16px 16px 0;
+    letter-spacing: 0%;    
+    color: #FFFFFF;
+    width: 344px;
+    height: 69px;
+  }
+  
+  .card h2.price {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #8CBF26;
+    display: flex;
+    margin: 16px 16px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* ========== PAGINAÇÃO ========== */
+  /* .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+  }
+  
+  .pagination button,
+  .pagination .page-btn {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination .page-btn[disabled] {
+    background-color: #3c5ec1;
+    color: white;
+    font-weight: bold;
+    border-color: #3c5ec1;
+    cursor: default;
+  } */
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2rem;
+  }
+  
+  .pagination button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .prevPageBtn,
+  .nextPageBtn {
+    background-color: transparent;
+    color: #0f9d58;
+    font-size: 22px;
+    border: none;   
+  }
+  
+  #pageNumbers button.active {
+    background-color: #0f9d58;
+    color: white;
+  }
+  
+
+  /* ========== FORMULÁRIOS ========== */
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+  }
+
+  main form {
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: #2070a0;
+    padding: 2rem;
+    border-radius: 15px;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+  
+  main form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  main form input,
+  main form select {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  main form > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main form button {
+    grid-column: span 2;
+    padding: 0.75rem;
+    background-color: #34a853;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-self: center;
+    width: 200px;
+    margin-top: 1rem;
+  }
+  
+  
+  /* ========== FOOTER ========== */
+  footer {
+    background-color: #FCF7F8;
+    color: #274553;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+
+  }
+  
+  footer img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .endereço h3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #4E8098;
+  }
+  .endereço p{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    width: 302px;
+    height: 92px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: #274553;
+}
+  
+
+.info {
+    width: 302;
+    height: 105;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.info h3 {
+    font-family: Roboto;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 4%;
+color: #4E8098;
+}
+
+.info p {
+    color: #274553;
+}
+
+.copyright {
+    background-color: #415FCE;
+    height: 34px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

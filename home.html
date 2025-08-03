@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
     <title>Home</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./assets/shirt_svgrepo.com.png" alt="">
+        <h1>Roup{IN}nha</h1>
+
+        <div class="adminMode">
+            <img src="./assets/user-admin_svgrepo.com.png" alt="">
+            <h2> Modo administrador</h2>
+        </div>
+    </header>
+
+    <main>
+        <a href="adicionar.html" class="addBtn">+ ADICIONAR</a>
+        <section class="cards"></section>
+
+        <div class="pagination">
+          <button class="prevPageBtn"><</button>
+          <div id="pageNumbers"></div>
+          <button class="nextPageBtn">></button>
+        </div>
+        
+        
+        </main>
+
+    <footer>
+        <div class="endereço">
+            <h3>Endereço</h3>
+            <p>Av. Milton Tavares de Souza, s/n - Sala 115 B - Boa Viagem, Niterói - RJ
+                CEP: 24210-315</p>
+        </div>
+        <div class="info">
+            <h3>Fale conosco</h3>
+            <p>contato@injunior.com.br</p>
+            <div>
+                <img src="./assets/mdi_instagram.png" alt="">
+                <img src="./assets/ri_facebook-fill.png" alt="">
+                <img src="./assets/ri_linkedin-fill.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>© Copyright 2025. IN Junior. Todos os direitos reservados. Niterói, Brasil.</p>
+    </div>
+
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
