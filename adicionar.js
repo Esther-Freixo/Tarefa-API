@@ -9,8 +9,9 @@ document.getElementById("add-form").addEventListener("submit", async (event) => 
         image: document.getElementById("image").value,
         category: document.getElementById("category").value,
         description: document.getElementById("description").value,
+        inStock: document.getElementById("inStock").value === "true",
         rating: parseFloat(document.getElementById("rating").value),
-    };
+    };  
 
     try {
         await addProduct(productData);

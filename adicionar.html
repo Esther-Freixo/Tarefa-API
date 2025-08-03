@@ -12,7 +12,7 @@
   <header>
     <img src="./assets/shirt_svgrepo.com.png" alt="">
     <h1>Roup{IN}nha</h1>
-    
+
     <div class="adminMode">
         <img src="./assets/user-admin_svgrepo.com.png" alt="">
         <h2> Modo administrador</h2>
@@ -46,7 +46,16 @@
           <label for="description">Descrição</label>
           <input type="text" id="description" required>
         </div>
-      
+
+        <div>
+            <label>Em estoque</label>
+            <select id="inStock" name="inStock">
+              <option value="true">Sim</option>
+              <option value="false">Não</option>
+            </select>    
+          </div>
+              
+
         <div>
           <label for="rating">Avaliação</label>
           <input type="number" step="0.1" id="rating" required>
